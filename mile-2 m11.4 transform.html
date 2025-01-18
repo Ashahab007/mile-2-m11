@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>m11.4 Transform element using rotate scale translate</title>
+    <style>
+      body {
+        margin-left: 100px;
+      }
+      .container,
+      .inner {
+        width: 200px;
+        height: 200px;
+      }
+
+      .container {
+        border: 2px solid slateblue;
+        background: aquamarine;
+      }
+
+      .inner {
+        border: 2px solid brown;
+        background-color: palegoldenrod;
+        /* transform: scale(0.25, 0.5); */
+        /* transform: rotate(-45deg); */
+        /* transform: scale(0.5) rotate(45deg); */
+        /* transform: translate(50px, 50px); */
+        /* transform: scale(0.5) rotate(45deg) translate(50px, 50px); shorthand*/
+      }
+
+      .inner:hover {
+        transform: scale(0.5) rotate(45deg) translate(50px);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Explore Transform and Translate</h2>
+
+    <h4>-scale(total scale = 0.5)</h4>
+    <h4>-scale(x & y axis x, y i.e 0.5, 0.25)</h4>
+    <h4>-rotate(45deg or -45deg)</h4>
+    <h4>shorthand - transform: scale(0.5) rotate(45deg);</h4>
+    <h4>-translateX() or translateY() or translate(x,y)</h4>
+    <h4>
+      shorthand: <br />transform: scale(0.5) rotate(45deg) translate(50px,50px)
+    </h4>
+
+    <br />
+    <br />
+    <div class="container">
+      <div class="inner">Inner 1</div>
+    </div>
+    <div class="container">
+      <div class="inner">Inner 2</div>
+    </div>
+    <div class="container">
+      <div class="inner">Inner 3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid tomato;
+        background-color: peachpuff;
+        /* property name | duration | easing function | delay */
+        transition: width 5s linear 3s, background-color 5s ease-in 3s;
+      }
+
+      .box:hover {
+        width: 400px;
+        background-color: red;
+      }
+
+      .box1 {
+        width: 100px;
+        height: 100px;
+        border: 2px solid tomato;
+        background-color: peachpuff;
+        transition: transform 1s linear;
+      }
+
+      .box1:hover {
+        transform: scale(1.25) rotate(45deg) translate(200px);
+      }
+    </style>
+    <title>mile-2 m11.4 Animation Transition</title>
+  </head>
+  <body>
+    <h3>Transition</h3>
+    <ul>
+      <li>Transform: Change the shape</li>
+      <li>
+        Translate: it is a value of the transform style. This means it moves
+        either x-axis and y-axis
+      </li>
+      <li>
+        Transition: how long it will take to do the change of the shape or
+        color.
+      </li>
+    </ul>
+    <p>
+      Transition Shorthand: property name | duration | easing function | delay
+    </p>
+    <br />
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <br />
+    <h4>Transition</h4>
+    <div class="box1"></div>
+  </body>
+</html>
